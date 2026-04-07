@@ -70,6 +70,7 @@
 - [Karpathy.skill](https://github.com/alchaincyf/karpathy-skill) - 提炼 Andrej Karpathy 对 AI 工程、教育与研究的思考框架。
 - [Ilya.skill](https://github.com/alchaincyf/ilya-sutskever-skill) - 提炼 Ilya Sutskever 对 scaling、研究突破与 superintelligence 的判断框架。
 - [MrBeast.skill](https://github.com/alchaincyf/mrbeast-skill) - 提炼 MrBeast 的内容选题、包装与观众留存方法论。
+- [内娱.skill](https://github.com/yanghaoraneve/star-skill) - 从歌词、视频、微博与评论中整理歌手或偶像的表达风格与互动方式，生成可对话的数字人格 skill。
 - [特朗普.skill](https://github.com/alchaincyf/trump-skill) - 提炼特朗普的谈判、锚定与权力博弈分析框架。
 - [峰哥亡命天涯 Skill](https://github.com/rottenpen/fengge-wangmingtianya-perspective) - 提炼“峰哥亡命天涯”的现实主义、止损导向与黑色幽默式表达结构。
 - [求是 Skill](https://github.com/HughYau/qiushi-skill) - 从教员思想中整理实事求是、调查研究与战略判断等方法论工具集。

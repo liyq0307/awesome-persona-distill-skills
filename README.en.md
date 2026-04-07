@@ -67,6 +67,7 @@ Here, "persona distillation" mainly refers to extracting expressive style, decis
 - [Karpathy.skill](https://github.com/alchaincyf/karpathy-skill) - Distills Andrej Karpathy's thinking on AI engineering, education, and research into a reusable perspective.
 - [Ilya.skill](https://github.com/alchaincyf/ilya-sutskever-skill) - Distills Ilya Sutskever's judgment on scaling, research breakthroughs, and superintelligence into a reusable framework.
 - [MrBeast.skill](https://github.com/alchaincyf/mrbeast-skill) - Distills MrBeast's methods for content concepts, packaging, and audience retention into a reusable playbook.
+- [内娱.skill](https://github.com/yanghaoraneve/star-skill) - Organizes a singer's or idol's expressive style and fan-facing interaction patterns from lyrics, videos, posts, and comments into a conversational digital persona skill.
 - [特朗普.skill](https://github.com/alchaincyf/trump-skill) - Distills Donald Trump's frameworks for negotiation, anchoring, and power analysis.
 - [峰哥亡命天涯 Skill](https://github.com/rottenpen/fengge-wangmingtianya-perspective) - Distills the "Fengge Wangming Tianya" style into a reality-first, stop-loss-oriented, darkly humorous reasoning framework.
 - [求是 Skill](https://github.com/HughYau/qiushi-skill) - Organizes fact-seeking, investigation, contradiction analysis, and strategic judgment tools distilled from Mao-related methodology.
