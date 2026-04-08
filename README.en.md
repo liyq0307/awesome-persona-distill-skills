@@ -85,4 +85,6 @@ Here, "persona distillation" mainly refers to extracting expressive style, decis
 
 ## Contributing
 
-Please read [`CONTRIBUTING.en.md`](CONTRIBUTING.en.md) before submitting a PR.
+For new inclusion requests, please start with the issue form. After a maintainer reviews the request and adds the `approved` label, the workflow will generate a pull request automatically.
+
+If you are fixing existing entries, documentation, or broken links, you can still open a pull request directly. See [`CONTRIBUTING.en.md`](CONTRIBUTING.en.md) for the full process.

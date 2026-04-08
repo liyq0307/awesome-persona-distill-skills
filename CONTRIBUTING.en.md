@@ -14,6 +14,8 @@ This repository collects Agent Skills centered on "persona distillation", with e
 - Fix dead links, repository names, descriptions, or category placement.
 - Improve wording in the READMEs so categories and descriptions are more accurate.
 
+For new inclusion requests, the issue form is the only public intake path. After a maintainer reviews the request and adds the `approved` label, the workflow will generate a pull request automatically.
+
 ## Contributions We Discourage
 
 - Generic AI tools, prompt collections, or resource directories that are only loosely related to persona distillation.
@@ -32,9 +34,11 @@ Please try to make sure each entry meets these standards:
 - The description stays within one sentence and explains what is being distilled, from what source, or for what purpose, without promotional wording.
 - If the project fits a different category better, submit it directly in the more appropriate section.
 
-## README Entry Format
+## Entry Writing Reference
 
-Follow the existing list format:
+If you are requesting a new inclusion, use the format and tone below when filling in the bilingual descriptions in the issue form. After a maintainer adds the `approved` label, the workflow will use that content to generate the README entry automatically.
+
+If you are directly revising an existing entry, keep using the current README list format:
 
 ```md
 - [Project Name](https://github.com/owner/repo) - One sentence describing what the project distills, where it comes from, or what it is for.
@@ -48,11 +52,11 @@ Suggested writing style:
 
 ## Submission Process
 
-1. Fork the repository and create a branch.
-2. Add or update the entry in both [`README.md`](./README.md) and [`README.en.md`](./README.en.md).
-3. If your change affects inclusion standards or collaboration rules, update the relevant contribution guide as well.
-4. Run formatting locally, then check that entry style, links, and wording remain consistent with the current content.
-5. Open a PR and explain why the change belongs in this repository.
+1. If you want to request a new inclusion, start with the issue form and fill in the repository link, category, bilingual descriptions, and rationale.
+2. After review, a maintainer may add the `approved` label to the issue, and the workflow will generate a pull request automatically.
+3. If you are fixing existing entries, documentation, or broken links, you can still fork the repository, create a branch, and open a pull request directly.
+4. For direct PR changes, update the affected content in both [`README.md`](./README.md) and [`README.en.md`](./README.en.md). If your change affects inclusion standards or collaboration rules, update the relevant contribution guide as well.
+5. Run formatting locally, then check that entry style, links, and wording remain consistent with the current content.
 
 ## Local Check
 
@@ -80,6 +84,7 @@ To help review move faster, please explain:
 
 ## Communication
 
-- Small fixes can go straight to a PR.
-- If you plan to restructure categories, rewrite many descriptions, or noticeably expand the inclusion scope, it is better to open an issue or PR first to explain the idea.
+- New inclusion requests should go through the issue form instead of a direct PR.
+- Small fixes, updates to existing entries, and broken-link fixes can go straight to a PR.
+- If you plan to restructure categories, rewrite many descriptions, or noticeably expand the inclusion scope, it is better to open an issue first to explain the idea.
 - Keep discussion focused on thematic boundaries, readability, and reader value.

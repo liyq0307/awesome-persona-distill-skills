@@ -9,7 +9,10 @@
   },
   "scripts": {
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "test": "node --test",
+    "check:consistency": "node scripts/check-repository-consistency.mjs",
+    "check:links": "node scripts/check-links.mjs"
   },
   "devDependencies": {
     "prettier": "^3.8.1"
