@@ -39,6 +39,8 @@ Here, "persona distillation" mainly refers to extracting expressive style, decis
 - [师兄.skill](https://github.com/zhanghaichao520/senpai-skill) - Distills how senior lab members mentor others and handle emergencies from research group materials.
 - [导师.skill](https://github.com/ybq22/supervisor) - Turns a supervisor's advising style into a mentor assistant for students and educators.
 - [大学老师.skill](https://github.com/CommitHu502Craft/professor-skill) - Organizes course materials and professor style into review priorities, exam patterns, and grading hints.
+- [骂人求职.skill](https://github.com/Schlaflied/roast-cold-email-skill) - Generates research-backed critical cold emails from public company information and job postings, replacing empty praise with precise observations to get overlooked candidates back into view.
+- [HR.skill](https://github.com/Schlaflied/hr-skill) - Organizes HR communication logic and decision patterns from rejection letters and hiring processes, helping job seekers reverse-engineer screening criteria and reframe their narrative.
 
 ## Intimate Relationships and Family Memories
 
