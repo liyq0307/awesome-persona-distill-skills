@@ -1,5 +1,5 @@
-import test from "node:test";
 import assert from "node:assert/strict";
+import test from "node:test";
 
 import {
   CATEGORY_LABELS,
@@ -14,10 +14,10 @@ https://github.com/example/project
 ### 项目名称 / Project Name
 Example Project
 
-### 中文描述 / Chinese Description
+### 汉语描述 / Chinese Description
 一个示例项目，用于蒸馏某类人物表达风格。
 
-### 英文描述 / English Description
+### 英语描述 / English Description
 An example project for distilling a certain style of personal expression.
 
 ### 分类 / Category

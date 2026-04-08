@@ -43,8 +43,8 @@ export const CATEGORY_MAP = new Map(
 const REQUIRED_FIELDS = [
   ["存储库链接 / Repository URL", "repositoryUrl"],
   ["项目名称 / Project Name", "projectName"],
-  ["中文描述 / Chinese Description", "descriptionZh"],
-  ["英文描述 / English Description", "descriptionEn"],
+  ["汉语描述 / Chinese Description", "descriptionZh"],
+  ["英语描述 / English Description", "descriptionEn"],
   ["分类 / Category", "categoryLabel"],
   ["收录理由 / Why It Belongs Here", "rationale"],
   ["与现有条目的区别 / Differentiation", "differentiation"],
