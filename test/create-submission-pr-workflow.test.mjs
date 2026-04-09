@@ -9,11 +9,12 @@ test("create-submission-pr workflow auto-merges approved submissions", async () 
       process.cwd(),
       ".github",
       "workflows",
-      "create-submission-pr.yml",
+      "process-approved-submission.yml",
     ),
     "utf8",
   );
 
+  assert.match(workflow, /name: Process Approved Submission/);
   assert.match(workflow, /name: Merge pull request/);
   assert.match(workflow, /created and merged/i);
 });

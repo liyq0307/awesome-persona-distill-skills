@@ -1,4 +1,4 @@
-name: Create Submission PR
+name: Process Approved Submission
 
 on:
   issues:
