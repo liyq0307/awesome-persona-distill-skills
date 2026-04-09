@@ -15,6 +15,7 @@ test("create-submission-pr workflow auto-merges approved submissions", async () 
   );
 
   assert.match(workflow, /name: Process Approved Submission/);
+  assert.match(workflow, /workflows: write/);
   assert.match(workflow, /name: Merge pull request/);
   assert.match(workflow, /created and merged/i);
 });
