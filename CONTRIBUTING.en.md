@@ -30,13 +30,13 @@ Please try to make sure each entry meets these standards:
 
 - The repository is publicly accessible.
 - The project is relevant to this list and fits the chosen category.
-- The link text uses the project's commonly used name.
+- The Chinese and English names each use the project's commonly used name in that language.
 - The description stays within one sentence and explains what is being distilled, from what source, or for what purpose, without promotional wording.
 - If the project fits a different category better, submit it directly in the more appropriate section.
 
 ## Entry Writing Reference
 
-If you are requesting a new inclusion, use the format and tone below when filling in the bilingual descriptions in the issue form. After a maintainer adds the `approved` label, the workflow will use that content to generate the README entry automatically.
+If you are requesting a new inclusion, use the format and tone below when filling in the bilingual names and descriptions in the issue form. After a maintainer adds the `approved` label, the workflow will use that content to generate the README entry automatically.
 
 If you are directly revising an existing entry, keep using the current README list format:
 
@@ -52,7 +52,7 @@ Suggested writing style:
 
 ## Submission Process
 
-1. If you want to request a new inclusion, start with the issue form and fill in the repository link, category, bilingual descriptions, and rationale.
+1. If you want to request a new inclusion, start with the issue form and fill in the repository link, category, bilingual names, bilingual descriptions, and rationale.
 2. After review, a maintainer may add the `approved` label to the issue, and the workflow will generate a pull request automatically.
 3. If you are fixing existing entries, documentation, or broken links, you can still fork the repository, create a branch, and open a pull request directly.
 4. For direct PR changes, update the affected content in both [`README.md`](./README.md) and [`README.en.md`](./README.en.md). If your change affects inclusion standards or collaboration rules, update the relevant contribution guide as well.

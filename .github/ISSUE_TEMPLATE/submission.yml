@@ -21,10 +21,17 @@ body:
     validations:
       required: true
   - type: input
-    id: project_name
+    id: project_name_zh
     attributes:
-      label: 项目名称 / Project Name
-      description: 使用项目常用名称。 / Use the project's commonly used name.
+      label: 汉语名称 / Chinese Name
+      description: 使用项目的常用中文名称。 / Use the project's commonly used Chinese name.
+    validations:
+      required: true
+  - type: input
+    id: project_name_en
+    attributes:
+      label: 英语名称 / English Name
+      description: 使用项目的常用英文名称。 / Use the project's commonly used English name.
     validations:
       required: true
   - type: textarea

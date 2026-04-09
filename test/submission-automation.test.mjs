@@ -11,7 +11,10 @@ const issueBody = `
 ### 存储库链接 / Repository URL
 https://github.com/example/project
 
-### 项目名称 / Project Name
+### 汉语名称 / Chinese Name
+示例项目
+
+### 英语名称 / English Name
 Example Project
 
 ### 汉语描述 / Chinese Description
@@ -37,7 +40,8 @@ test("parseSubmissionIssueBody extracts required fields", () => {
   const parsed = parseSubmissionIssueBody(issueBody);
 
   assert.equal(parsed.repositoryUrl, "https://github.com/example/project");
-  assert.equal(parsed.projectName, "Example Project");
+  assert.equal(parsed.projectNameZh, "示例项目");
+  assert.equal(parsed.projectNameEn, "Example Project");
   assert.equal(parsed.categoryLabel, CATEGORY_LABELS[0]);
   assert.match(parsed.descriptionZh, /示例项目/);
   assert.match(parsed.descriptionEn, /example project/i);
@@ -64,7 +68,8 @@ test("parseSubmissionIssueBody accepts uppercase confirmation markers", () => {
     ),
   );
 
-  assert.equal(parsed.projectName, "Example Project");
+  assert.equal(parsed.projectNameZh, "示例项目");
+  assert.equal(parsed.projectNameEn, "Example Project");
 });
 
 test("applySubmissionToReadmes inserts matching entries in both READMEs", () => {
@@ -94,7 +99,7 @@ test("applySubmissionToReadmes inserts matching entries in both READMEs", () => 
 
   assert.match(
     updated.readmeZh,
-    /\- \[Example Project\]\(https:\/\/github\.com\/example\/project\) - 一个示例项目，用于蒸馏某类人物表达风格。\n/,
+    /\- \[示例项目\]\(https:\/\/github\.com\/example\/project\) - 一个示例项目，用于蒸馏某类人物表达风格。\n/,
   );
   assert.match(
     updated.readmeEn,

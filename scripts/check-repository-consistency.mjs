@@ -138,6 +138,16 @@ export function validateRepositoryContent({
     "approved",
     ".github/ISSUE_TEMPLATE/submission.yml",
   );
+  assertIncludes(
+    issueTemplate,
+    "汉语名称 / Chinese Name",
+    ".github/ISSUE_TEMPLATE/submission.yml",
+  );
+  assertIncludes(
+    issueTemplate,
+    "英语名称 / English Name",
+    ".github/ISSUE_TEMPLATE/submission.yml",
+  );
 }
 
 async function main() {

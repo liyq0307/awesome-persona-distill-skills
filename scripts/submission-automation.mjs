@@ -42,7 +42,8 @@ export const CATEGORY_MAP = new Map(
 
 const REQUIRED_FIELDS = [
   ["存储库链接 / Repository URL", "repositoryUrl"],
-  ["项目名称 / Project Name", "projectName"],
+  ["汉语名称 / Chinese Name", "projectNameZh"],
+  ["英语名称 / English Name", "projectNameEn"],
   ["汉语描述 / Chinese Description", "descriptionZh"],
   ["英语描述 / English Description", "descriptionEn"],
   ["分类 / Category", "categoryLabel"],
@@ -202,12 +203,12 @@ export function parseSubmissionIssueBody(body) {
 export function applySubmissionToReadmes({ readmeZh, readmeEn, submission }) {
   const repositoryUrl = normalizeRepositoryUrl(submission.repositoryUrl);
   const zhEntry = {
-    name: collapseWhitespace(submission.projectName),
+    name: collapseWhitespace(submission.projectNameZh),
     url: repositoryUrl,
     description: collapseWhitespace(submission.descriptionZh),
   };
   const enEntry = {
-    name: collapseWhitespace(submission.projectName),
+    name: collapseWhitespace(submission.projectNameEn),
     url: repositoryUrl,
     description: collapseWhitespace(submission.descriptionEn),
   };
@@ -263,7 +264,8 @@ async function main() {
   console.log(
     JSON.stringify({
       repositoryUrl: submission.repositoryUrl,
-      projectName: submission.projectName,
+      projectNameZh: submission.projectNameZh,
+      projectNameEn: submission.projectNameEn,
       category: submission.categoryLabel,
     }),
   );
