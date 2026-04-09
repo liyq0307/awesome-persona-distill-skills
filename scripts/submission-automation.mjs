@@ -168,7 +168,11 @@ function updateReadmeSection(readme, heading, entry) {
 function assertRequiredConfirmations(body) {
   const confirmationSection = extractSection(body, "确认事项 / Confirmations");
   for (const label of REQUIRED_CONFIRMATIONS) {
-    if (!confirmationSection.includes(`- [x] ${label}`)) {
+    const pattern = new RegExp(
+      `(^|\\n)- \\[[xX]\\] ${escapeForRegex(label)}(?=\\n|$)`,
+      "u",
+    );
+    if (!pattern.test(confirmationSection)) {
       throw new Error(`Missing required confirmation: ${label}`);
     }
   }

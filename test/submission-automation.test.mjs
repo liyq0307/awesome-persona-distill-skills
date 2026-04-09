@@ -56,6 +56,17 @@ test("parseSubmissionIssueBody rejects non-GitHub repository URLs", () => {
   );
 });
 
+test("parseSubmissionIssueBody accepts uppercase confirmation markers", () => {
+  const parsed = parseSubmissionIssueBody(
+    issueBody.replace(
+      "- [x] 我已阅读并遵循贡献指南 / I have read and follow the contribution guide",
+      "- [X] 我已阅读并遵循贡献指南 / I have read and follow the contribution guide",
+    ),
+  );
+
+  assert.equal(parsed.projectName, "Example Project");
+});
+
 test("applySubmissionToReadmes inserts matching entries in both READMEs", () => {
   const submission = parseSubmissionIssueBody(issueBody);
   const readmeZh = `## 自我蒸馏与元工具
