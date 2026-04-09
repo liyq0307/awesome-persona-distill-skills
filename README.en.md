@@ -33,12 +33,13 @@ Here, "persona distillation" mainly refers to extracting expressive style, decis
 
 ## Self Distillation and Meta Tools
 
-- [自己.skill](https://github.com/notdog1998/yourself-skill) - Organizes personal conversations and records into a self-distillation assistant.
-- [数字人生.skill](https://github.com/wildbyteai/digital-life) - Distills a structured self-portrait from the recurring digital traces a person leaves across everyday tools.
-- [女娲.skill](https://github.com/alchaincyf/nuwa-skill) - Distills reusable skills from an individual's mental models, decision heuristics, and expression patterns.
 - [永生.skill](https://github.com/agenmod/immortal-skill) - Distills multidimensional digital persona profiles from chat logs and related materials.
-- [Forge Skill](https://github.com/YIKUAIBANZI/forge-skill) - Splits self-distillation and other-persona distillation into separate workflows for reflection, memory preservation, and persona-driven dialogue.
+- [女娲.skill](https://github.com/alchaincyf/nuwa-skill) - Distills reusable skills from an individual's mental models, decision heuristics, and expression patterns.
 - [anti-distill](https://github.com/leilei926524-tech/anti-distill) - Separates publicly distributable skill content from private experience backups for skill-delivery workflows.
+- [自己.skill](https://github.com/notdog1998/yourself-skill) - Organizes personal conversations and records into a self-distillation assistant.
+- [my-digital-life](https://github.com/weixr18/my-digital-life) - A framework for upgrading an individual's knowledge base into a digital avatar/digital life form
+- [数字人生.skill](https://github.com/wildbyteai/digital-life) - Distills a structured self-portrait from the recurring digital traces a person leaves across everyday tools.
+- [Forge Skill](https://github.com/YIKUAIBANZI/forge-skill) - Splits self-distillation and other-persona distillation into separate workflows for reflection, memory preservation, and persona-driven dialogue.
 
 ## Workplace and Academic Relationships
 
