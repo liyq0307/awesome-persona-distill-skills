@@ -87,6 +87,7 @@
 - [常熟阿诺（加州盛亦陶） Skill](https://github.com/Ricardo-Vv/changshu-anuo) - 通过左右脑互搏结构世间万物
 - [峰哥亡命天涯 Skill](https://github.com/rottenpen/fengge-wangmingtianya-perspective) - 提炼“峰哥亡命天涯”的现实主义、止损导向与黑色幽默式表达结构，形成可复用的方法论视角。
 - [巴菲特思维操作系统](https://github.com/will2025btc/buffett-perspective) - 提炼沃伦·巴菲特的投资与决策框架，形成可复用的方法论视角。
+- [maozedong.skill](https://github.com/wwwaapplleecu-source/mao-skill) - 通过使用网络公开著作，深刻蒸馏毛教员的思想和方法论。
 - [内娱.skill](https://github.com/yanghaoraneve/star-skill) - 从歌词、视频、微博与评论中整理歌手或偶像的表达风格与互动方式，形成可对话的数字人格助手。
 
 ## 精神性与专门化主题
