@@ -56,16 +56,15 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Set up Node.js
+      - name: Set up Bun
         if: steps.existing-pr.outputs.exists != 'true'
-        uses: actions/setup-node@v4
+        uses: oven-sh/setup-bun@v2
         with:
-          node-version: 20
-          cache: npm
+          bun-version: 1.3.11
 
       - name: Install dependencies
         if: steps.existing-pr.outputs.exists != 'true'
-        run: npm ci
+        run: bun ci
 
       - name: Check for existing remote branch
         if: steps.existing-pr.outputs.exists != 'true'
@@ -101,7 +100,7 @@ jobs:
         env:
           ISSUE_BODY: ${{ github.event.issue.body }}
         run: |
-          node scripts/submission-automation.mjs > submission-result.json 2> submission-error.log
+          bun scripts/submission-automation.mjs > submission-result.json 2> submission-error.log
 
       - name: Comment on validation failure
         if: steps.apply.outcome == 'failure'

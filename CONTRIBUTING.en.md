@@ -63,8 +63,8 @@ Suggested writing style:
 Before submitting, run:
 
 ```bash
-npm ci
-npm run format
+bun install
+bun run format
 ```
 
 Then double-check:

@@ -63,8 +63,8 @@
 提交前建议先运行：
 
 ```bash
-npm ci
-npm run format
+bun install
+bun run format
 ```
 
 然后重点确认：
