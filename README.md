@@ -38,6 +38,7 @@
 
 - [永生.skill](https://github.com/agenmod/immortal-skill) - 基于聊天记录与相关资料整理多维数字人格画像。
 - [女娲.skill](https://github.com/alchaincyf/nuwa-skill) - 从个人的心智模型、决策启发式与表达模式中提炼可复用技能。
+- [VibePortrait](https://github.com/dadwadw233/VibePortrait) - 从 Vibe Coding 对话中生成开发者个人画像，提炼开发技能与偏好。
 - [反蒸馏 Skill](https://github.com/leilei926524-tech/anti-distill) - 面向技能交付场景，将可公开分发的技能内容与私有经验备份分离管理。
 - [自己.skill](https://github.com/notdog1998/yourself-skill) - 将个人对话与记录整理为自我蒸馏助手。
 - [my-digital-life](https://github.com/weixr18/my-digital-life) - 一套将个人知识库升级为数字分身/数字生命的框架

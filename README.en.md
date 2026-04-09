@@ -35,6 +35,7 @@ Here, "persona distillation" mainly refers to extracting expressive style, decis
 
 - [永生.skill](https://github.com/agenmod/immortal-skill) - Distills multidimensional digital persona profiles from chat logs and related materials.
 - [女娲.skill](https://github.com/alchaincyf/nuwa-skill) - Distills reusable skills from an individual's mental models, decision heuristics, and expression patterns.
+- [VibePortrait](https://github.com/dadwadw233/VibePortrait) - Generates a developer's personal portrait from vibe-coding conversations, distilling development skills and preferences.
 - [anti-distill](https://github.com/leilei926524-tech/anti-distill) - Separates publicly distributable skill content from private experience backups for skill-delivery workflows.
 - [自己.skill](https://github.com/notdog1998/yourself-skill) - Organizes personal conversations and records into a self-distillation assistant.
 - [my-digital-life](https://github.com/weixr18/my-digital-life) - A framework for upgrading an individual's knowledge base into a digital avatar/digital life form
