@@ -4,15 +4,16 @@
   "private": true,
   "description": "Persona distillation skills for turning people, relationships, and personal context into reusable AI assistants.",
   "license": "CC0-1.0",
+  "packageManager": "bun@1.3.11",
   "engines": {
-    "node": ">=20"
+    "bun": ">=1.2.0"
   },
   "scripts": {
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "test": "node --test",
-    "check:consistency": "node scripts/check-repository-consistency.mjs",
-    "check:links": "node scripts/check-links.mjs"
+    "test": "bun test",
+    "check:consistency": "bun scripts/check-repository-consistency.mjs",
+    "check:links": "bun scripts/check-links.mjs"
   },
   "devDependencies": {
     "prettier": "^3.8.1"
