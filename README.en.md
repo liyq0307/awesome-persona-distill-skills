@@ -71,7 +71,6 @@ Here, "persona distillation" mainly refers to extracting expressive style, decis
 - [马斯克.skill](https://github.com/alchaincyf/elon-musk-skill) - Distills Elon Musk's first-principles thinking and product mindset into a reusable decision framework.
 - [峰哥亡命天涯 Skill](https://github.com/rottenpen/fengge-wangmingtianya-perspective) - Distills the "Fengge Wangming Tianya" style into a reality-first, stop-loss-oriented, darkly humorous methodological perspective.
 - [费曼.skill](https://github.com/alchaincyf/feynman-skill) - Distills Richard Feynman's explanatory style and truth-seeking heuristics into a reusable methodological framework.
-- [郭德纲.skill](https://github.com/ByteRax/guodegang-skills) - Guo Degang's cognitive operating system. Not a quote collection, but a runnable thinking framework — distilled from full-text analysis of 3 first-hand books, 6-dimensional deep research, and 80+ cross-verified sources, extracting 6 core mental models, 10 decision heuristics, and complete expression DNA.
 - [户晨风.skill](https://github.com/Janlaywss/hu-chenfeng-skill) - Distills Hu Chenfeng's consumer-realist perspective for analyzing spending, cities, and career choices.
 - [Ilya.skill](https://github.com/alchaincyf/ilya-sutskever-skill) - Distills Ilya Sutskever's judgment on scaling, research breakthroughs, and superintelligence into a reusable methodological perspective.
 - [KarlMarx Skill](https://github.com/baojiachen0214/karlmarx-skill) - Distills structural analysis, contradiction analysis, and practice-based verification methods from Marxist methodology into a framework for deep problem analysis.
@@ -83,6 +82,7 @@ Here, "persona distillation" mainly refers to extracting expressive style, decis
 - [纳瓦尔.skill](https://github.com/alchaincyf/naval-skill) - Distills Naval's frameworks on wealth, leverage, and judgment into a reusable methodological perspective.
 - [PG.skill](https://github.com/alchaincyf/paul-graham-skill) - Distills Paul Graham's frameworks on startups, writing, and independent thinking into a reusable methodological perspective.
 - [求是 Skill](https://github.com/HughYau/qiushi-skill) - Organizes fact-seeking, investigation, and strategic-judgment tools from related methodology into a reusable analytical framework.
+- [RobPike.skill](https://github.com/smallnest/rob-pike-skill) - Robert Pike is a Canadian programmer and author. He is best known for his work on the Go programming language while working at Google
 - [内娱.skill](https://github.com/yanghaoraneve/star-skill) - Organizes a singer's or idol's expressive style and fan-facing interaction patterns from lyrics, videos, posts, and comments into a conversational digital persona assistant.
 - [乔布斯.skill](https://github.com/alchaincyf/steve-jobs-skill) - Distills Steve Jobs's product judgment, narrative style, and decision heuristics into a reusable methodological framework.
 - [塔勒布.skill](https://github.com/alchaincyf/taleb-skill) - Distills Nassim Taleb's heuristics on antifragility and risk into a reusable methodological framework.

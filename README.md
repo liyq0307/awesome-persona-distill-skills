@@ -86,6 +86,7 @@
 - [纳瓦尔.skill](https://github.com/alchaincyf/naval-skill) - 提炼纳瓦尔关于财富、杠杆与判断力的框架，形成可复用的方法论视角。
 - [PG.skill](https://github.com/alchaincyf/paul-graham-skill) - 提炼 Paul Graham 关于创业、写作与独立思考的框架，形成可复用的方法论视角。
 - [求是 Skill](https://github.com/HughYau/qiushi-skill) - 从相关思想方法中整理实事求是、调查研究与战略判断等工具，形成可复用的问题分析框架。
+- [罗布派克.skill](https://github.com/smallnest/rob-pike-skill) - 前贝尔实验室大师，Unix 大佬，UTF-8 发明者，Go 语言之父
 - [内娱.skill](https://github.com/yanghaoraneve/star-skill) - 从歌词、视频、微博与评论中整理歌手或偶像的表达风格与互动方式，形成可对话的数字人格助手。
 - [乔布斯.skill](https://github.com/alchaincyf/steve-jobs-skill) - 提炼史蒂夫·乔布斯的产品判断、叙事风格与决策启发式，形成可复用的方法论框架。
 - [塔勒布.skill](https://github.com/alchaincyf/taleb-skill) - 提炼纳西姆·塔勒布关于反脆弱与风险的启发式，形成可复用的方法论框架。
