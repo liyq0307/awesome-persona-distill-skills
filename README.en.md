@@ -84,6 +84,7 @@ Here, "persona distillation" mainly refers to extracting expressive style, decis
 - [常熟阿诺（加州盛亦陶） Skill](https://github.com/Ricardo-Vv/changshu-anuo) - Structure all things in the world through the mutual struggle of the left and right brains.
 - [峰哥亡命天涯 Skill](https://github.com/rottenpen/fengge-wangmingtianya-perspective) - Distills the "Fengge Wangming Tianya" style into a reality-first, stop-loss-oriented, darkly humorous methodological perspective.
 - [Buffett Perspective](https://github.com/will2025btc/buffett-perspective) - Distills Warren Buffett's investment and decision-making frameworks into a reusable methodological perspective.
+- [maozedong.skill](https://github.com/wwwaapplleecu-source/mao-skill) - By utilizing publicly available online works, we can deeply distill the thoughts and methodologies of Teacher Mao.
 - [内娱.skill](https://github.com/yanghaoraneve/star-skill) - Organizes a singer's or idol's expressive style and fan-facing interaction patterns from lyrics, videos, posts, and comments into a conversational digital persona assistant.
 
 ## Spiritual and Specialized Topics
