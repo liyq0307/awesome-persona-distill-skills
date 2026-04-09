@@ -88,9 +88,10 @@ Here, "persona distillation" mainly refers to extracting expressive style, decis
 
 ## Spiritual and Specialized Topics
 
+- [💎 金刚经.skill](https://github.com/dull-bird/diamond-sutra-skill) - I used knowledge distillation on a Large Language Model to forge the core interpretations of the Diamond Sutra by Nan Huai-jin and Fei Yong into a personalized AI plugin.
+- [Numerologist Skills](https://github.com/FANzR-arch/Numerologist_skills) - Uses structured references and scripted constraints to organize Qimen Dunjia, Ziwei Doushu, and related metaphysics practices.
 - [赛博算命 Skill](https://github.com/jinchenma94/bazi-skill) - Performs Four Pillars charting and analysis from birth information and traditional destiny texts.
 - [月老 · 姻缘测算 Skills](https://github.com/Ming-H/yinyuan-skills) - Organizes relationship divination into a multi-mode traditional metaphysics skill covering matching, fortune sticks, and romance-luck readings.
-- [Numerologist Skills](https://github.com/FANzR-arch/Numerologist_skills) - Uses structured references and scripted constraints to organize Qimen Dunjia, Ziwei Doushu, and related metaphysics practices.
 - [Master-skill](https://github.com/xr843/Master-skill) - Organizes Han Chinese Buddhist teaching styles and explanatory perspectives based on Buddhist canonical literature.
 
 ## Contributing
