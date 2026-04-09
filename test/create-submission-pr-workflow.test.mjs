@@ -15,7 +15,10 @@ test("create-submission-pr workflow auto-merges approved submissions", async () 
   );
 
   assert.match(workflow, /name: Process Approved Submission/);
-  assert.match(workflow, /workflows: write/);
+  assert.doesNotMatch(workflow, /workflows: write/);
+  assert.match(workflow, /name: Create remote branch reference/);
+  assert.match(workflow, /github\.rest\.git\.createRef/);
+  assert.match(workflow, /git push origin HEAD:"\$\{branch\}"/);
   assert.match(workflow, /name: Merge pull request/);
   assert.match(workflow, /created and merged/i);
 });
