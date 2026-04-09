@@ -1,0 +1,146 @@
+name: Merge Approved Submission PR
+
+on:
+  workflow_run:
+    workflows:
+      - Format
+      - Link Check
+      - Repository Consistency
+    types:
+      - completed
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
+concurrency:
+  group: submission-pr-${{ github.event.workflow_run.head_branch }}
+  cancel-in-progress: false
+
+jobs:
+  merge-pr:
+    if: >-
+      github.event.workflow_run.conclusion == 'success' &&
+      startsWith(github.event.workflow_run.head_branch, 'auto/submission-issue-')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Merge automated submission PR when checks are green
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const branch = context.payload.workflow_run.head_branch;
+            const issueMatch = branch.match(/^auto\/submission-issue-(\d+)$/);
+
+            if (!issueMatch) {
+              core.info(`Branch ${branch} does not map to an approved submission issue.`);
+              return;
+            }
+
+            const issueNumber = Number(issueMatch[1]);
+            const pulls = await github.paginate(github.rest.pulls.list, {
+              owner,
+              repo,
+              state: "open",
+              head: `${owner}:${branch}`,
+            });
+
+            if (pulls.length === 0) {
+              core.info(`No open PR found for automation branch ${branch}.`);
+              return;
+            }
+
+            const pullRequest = pulls[0];
+            const pullNumber = pullRequest.number;
+
+            const { data: combinedStatus } = await github.rest.repos.getCombinedStatusForRef({
+              owner,
+              repo,
+              ref: pullRequest.head.sha,
+            });
+            const { data: checkRuns } = await github.rest.checks.listForRef({
+              owner,
+              repo,
+              ref: pullRequest.head.sha,
+              per_page: 100,
+            });
+
+            const allChecksGreen =
+              combinedStatus.state === "success" &&
+              checkRuns.check_runs.every((checkRun) => {
+                if (checkRun.status !== "completed") {
+                  return false;
+                }
+
+                return ["success", "neutral", "skipped"].includes(checkRun.conclusion);
+              });
+
+            if (!allChecksGreen) {
+              core.info(`Checks for PR #${pullNumber} are not all green yet.`);
+              return;
+            }
+
+            for (let attempt = 1; attempt <= 12; attempt += 1) {
+              const { data: pr } = await github.rest.pulls.get({
+                owner,
+                repo,
+                pull_number: pullNumber,
+              });
+
+              if (pr.merged || pr.state === "closed") {
+                core.info(`Pull request #${pullNumber} is already closed.`);
+                return;
+              }
+
+              if (pr.mergeable === false && pr.mergeable_state === "behind") {
+                core.info(
+                  `Pull request #${pullNumber} is behind the base branch. Updating branch before merge.`,
+                );
+                await github.rest.pulls.updateBranch({
+                  owner,
+                  repo,
+                  pull_number: pullNumber,
+                });
+                return;
+              }
+
+              if (
+                pr.mergeable === null ||
+                pr.mergeable_state === "unknown" ||
+                pr.mergeable_state === "unstable"
+              ) {
+                core.info(
+                  `Mergeability for PR #${pullNumber} is still being computed (attempt ${attempt}/12).`,
+                );
+                await new Promise((resolve) => setTimeout(resolve, 5000));
+                continue;
+              }
+
+              if (pr.mergeable !== true) {
+                core.setFailed(
+                  `Pull request #${pullNumber} is not mergeable (state: ${pr.mergeable_state}).`,
+                );
+                return;
+              }
+
+              await github.rest.pulls.merge({
+                owner,
+                repo,
+                pull_number: pullNumber,
+                merge_method: "squash",
+                sha: pr.head.sha,
+              });
+              core.info(`Merged pull request #${pullNumber}.`);
+
+              await github.rest.issues.createComment({
+                owner,
+                repo,
+                issue_number: issueNumber,
+                body: `An automated pull request has been merged for this approved submission: ${pr.html_url}`,
+              });
+              return;
+            }
+
+            core.setFailed(`Unable to determine mergeability for PR #${pullNumber}.`);
