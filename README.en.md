@@ -61,28 +61,29 @@ Here, "persona distillation" mainly refers to extracting expressive style, decis
 
 ## Public Figures and Methodological Perspectives
 
-- [Buffett Perspective](https://github.com/will2025btc/buffett-perspective) - Distills Warren Buffett's investment and decision-making frameworks into a reusable methodological perspective.
+- [马斯克.skill](https://github.com/alchaincyf/elon-musk-skill) - Distills Elon Musk's first-principles thinking and product mindset into a reusable decision framework.
+- [费曼.skill](https://github.com/alchaincyf/feynman-skill) - Distills Richard Feynman's explanatory style and truth-seeking heuristics into a reusable methodological framework.
+- [Ilya.skill](https://github.com/alchaincyf/ilya-sutskever-skill) - Distills Ilya Sutskever's judgment on scaling, research breakthroughs, and superintelligence into a reusable methodological perspective.
+- [Karpathy.skill](https://github.com/alchaincyf/karpathy-skill) - Distills Andrej Karpathy's thinking on AI engineering, education, and research into a reusable methodological perspective.
+- [MrBeast.skill](https://github.com/alchaincyf/mrbeast-skill) - Distills MrBeast's methods for content concepts, packaging, and audience retention into a reusable creator playbook.
 - [芒格.skill](https://github.com/alchaincyf/munger-skill) - Distills Charlie Munger's interdisciplinary mental models and decision heuristics into a reusable methodological framework.
 - [纳瓦尔.skill](https://github.com/alchaincyf/naval-skill) - Distills Naval's frameworks on wealth, leverage, and judgment into a reusable methodological perspective.
 - [PG.skill](https://github.com/alchaincyf/paul-graham-skill) - Distills Paul Graham's frameworks on startups, writing, and independent thinking into a reusable methodological perspective.
 - [乔布斯.skill](https://github.com/alchaincyf/steve-jobs-skill) - Distills Steve Jobs's product judgment, narrative style, and decision heuristics into a reusable methodological framework.
-- [马斯克.skill](https://github.com/alchaincyf/elon-musk-skill) - Distills Elon Musk's first-principles thinking and product mindset into a reusable decision framework.
-- [张一鸣.skill](https://github.com/alchaincyf/zhang-yiming-skill) - Distills Zhang Yiming's product, organizational, and strategic judgment frameworks into a reusable methodological perspective.
-- [费曼.skill](https://github.com/alchaincyf/feynman-skill) - Distills Richard Feynman's explanatory style and truth-seeking heuristics into a reusable methodological framework.
-- [Karpathy.skill](https://github.com/alchaincyf/karpathy-skill) - Distills Andrej Karpathy's thinking on AI engineering, education, and research into a reusable methodological perspective.
-- [Ilya.skill](https://github.com/alchaincyf/ilya-sutskever-skill) - Distills Ilya Sutskever's judgment on scaling, research breakthroughs, and superintelligence into a reusable methodological perspective.
-- [X 导师.skill](https://github.com/alchaincyf/x-mentor-skill) - Integrates the writing and growth playbooks of multiple social-platform creators into a unified mentor-style methodological skill.
-- [MrBeast.skill](https://github.com/alchaincyf/mrbeast-skill) - Distills MrBeast's methods for content concepts, packaging, and audience retention into a reusable creator playbook.
-- [内娱.skill](https://github.com/yanghaoraneve/star-skill) - Organizes a singer's or idol's expressive style and fan-facing interaction patterns from lyrics, videos, posts, and comments into a conversational digital persona assistant.
-- [张雪峰.skill](https://github.com/alchaincyf/zhangxuefeng-skill) - Distills Zhang Xuefeng's practical frameworks for education planning, exams, and career planning into a reusable methodological perspective.
-- [户晨风.skill](https://github.com/Janlaywss/hu-chenfeng-skill) - Distills Hu Chenfeng's consumer-realist perspective for analyzing spending, cities, and career choices.
-- [童锦程.skill](https://github.com/hotcoffeeshake/tong-jincheng-skill) - Distills Tong Jincheng's blunt heuristics for reading relationships and interpersonal dynamics.
-- [特朗普.skill](https://github.com/alchaincyf/trump-skill) - Distills Donald Trump's frameworks for negotiation, anchoring, and power analysis into a reusable methodological perspective.
 - [塔勒布.skill](https://github.com/alchaincyf/taleb-skill) - Distills Nassim Taleb's heuristics on antifragility and risk into a reusable methodological framework.
-- [求是 Skill](https://github.com/HughYau/qiushi-skill) - Organizes fact-seeking, investigation, and strategic-judgment tools from related methodology into a reusable analytical framework.
-- [毛选.skill](https://github.com/leezythu/maoxuan-skill) - Distills contradiction analysis, base-building thinking, and strategic judgment frameworks from Mao's selected works into a reusable methodological perspective.
+- [特朗普.skill](https://github.com/alchaincyf/trump-skill) - Distills Donald Trump's frameworks for negotiation, anchoring, and power analysis into a reusable methodological perspective.
+- [X 导师.skill](https://github.com/alchaincyf/x-mentor-skill) - Integrates the writing and growth playbooks of multiple social-platform creators into a unified mentor-style methodological skill.
+- [张一鸣.skill](https://github.com/alchaincyf/zhang-yiming-skill) - Distills Zhang Yiming's product, organizational, and strategic judgment frameworks into a reusable methodological perspective.
+- [张雪峰.skill](https://github.com/alchaincyf/zhangxuefeng-skill) - Distills Zhang Xuefeng's practical frameworks for education planning, exams, and career planning into a reusable methodological perspective.
 - [KarlMarx Skill](https://github.com/baojiachen0214/karlmarx-skill) - Distills structural analysis, contradiction analysis, and practice-based verification methods from Marxist methodology into a framework for deep problem analysis.
+- [童锦程.skill](https://github.com/hotcoffeeshake/tong-jincheng-skill) - Distills Tong Jincheng's blunt heuristics for reading relationships and interpersonal dynamics.
+- [求是 Skill](https://github.com/HughYau/qiushi-skill) - Organizes fact-seeking, investigation, and strategic-judgment tools from related methodology into a reusable analytical framework.
+- [户晨风.skill](https://github.com/Janlaywss/hu-chenfeng-skill) - Distills Hu Chenfeng's consumer-realist perspective for analyzing spending, cities, and career choices.
+- [毛选.skill](https://github.com/leezythu/maoxuan-skill) - Distills contradiction analysis, base-building thinking, and strategic judgment frameworks from Mao's selected works into a reusable methodological perspective.
+- [常熟阿诺（加州盛亦陶） Skill](https://github.com/Ricardo-Vv/changshu-anuo) - Structure all things in the world through the mutual struggle of the left and right brains.
 - [峰哥亡命天涯 Skill](https://github.com/rottenpen/fengge-wangmingtianya-perspective) - Distills the "Fengge Wangming Tianya" style into a reality-first, stop-loss-oriented, darkly humorous methodological perspective.
+- [Buffett Perspective](https://github.com/will2025btc/buffett-perspective) - Distills Warren Buffett's investment and decision-making frameworks into a reusable methodological perspective.
+- [内娱.skill](https://github.com/yanghaoraneve/star-skill) - Organizes a singer's or idol's expressive style and fan-facing interaction patterns from lyrics, videos, posts, and comments into a conversational digital persona assistant.
 
 ## Spiritual and Specialized Topics
 

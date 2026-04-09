@@ -64,28 +64,29 @@
 
 ## 公众人物与方法论视角
 
-- [巴菲特思维操作系统](https://github.com/will2025btc/buffett-perspective) - 提炼沃伦·巴菲特的投资与决策框架，形成可复用的方法论视角。
+- [马斯克.skill](https://github.com/alchaincyf/elon-musk-skill) - 提炼埃隆·马斯克的第一性原理与产品思维，形成可复用的决策框架。
+- [费曼.skill](https://github.com/alchaincyf/feynman-skill) - 提炼理查德·费曼的解释风格与求真启发式，形成可复用的方法论框架。
+- [Ilya.skill](https://github.com/alchaincyf/ilya-sutskever-skill) - 提炼 Ilya Sutskever 对规模化、研究突破与超级智能的判断框架，形成可复用的方法论视角。
+- [Karpathy.skill](https://github.com/alchaincyf/karpathy-skill) - 提炼 Andrej Karpathy 对 AI 工程、教育与研究的思考框架，形成可复用的方法论视角。
+- [MrBeast.skill](https://github.com/alchaincyf/mrbeast-skill) - 提炼 MrBeast 的内容选题、包装与观众留存方法，形成可复用的创作打法。
 - [芒格.skill](https://github.com/alchaincyf/munger-skill) - 提炼查理·芒格的跨学科心智模型与决策启发式，形成可复用的方法论框架。
 - [纳瓦尔.skill](https://github.com/alchaincyf/naval-skill) - 提炼纳瓦尔关于财富、杠杆与判断力的框架，形成可复用的方法论视角。
 - [PG.skill](https://github.com/alchaincyf/paul-graham-skill) - 提炼 Paul Graham 关于创业、写作与独立思考的框架，形成可复用的方法论视角。
 - [乔布斯.skill](https://github.com/alchaincyf/steve-jobs-skill) - 提炼史蒂夫·乔布斯的产品判断、叙事风格与决策启发式，形成可复用的方法论框架。
-- [马斯克.skill](https://github.com/alchaincyf/elon-musk-skill) - 提炼埃隆·马斯克的第一性原理与产品思维，形成可复用的决策框架。
-- [张一鸣.skill](https://github.com/alchaincyf/zhang-yiming-skill) - 提炼张一鸣的产品、组织与战略判断框架，形成可复用的方法论视角。
-- [费曼.skill](https://github.com/alchaincyf/feynman-skill) - 提炼理查德·费曼的解释风格与求真启发式，形成可复用的方法论框架。
-- [Karpathy.skill](https://github.com/alchaincyf/karpathy-skill) - 提炼 Andrej Karpathy 对 AI 工程、教育与研究的思考框架，形成可复用的方法论视角。
-- [Ilya.skill](https://github.com/alchaincyf/ilya-sutskever-skill) - 提炼 Ilya Sutskever 对规模化、研究突破与超级智能的判断框架，形成可复用的方法论视角。
-- [X 导师.skill](https://github.com/alchaincyf/x-mentor-skill) - 整合多位社交平台创作者的写作与增长打法，形成统一的导师式方法论技能。
-- [MrBeast.skill](https://github.com/alchaincyf/mrbeast-skill) - 提炼 MrBeast 的内容选题、包装与观众留存方法，形成可复用的创作打法。
-- [内娱.skill](https://github.com/yanghaoraneve/star-skill) - 从歌词、视频、微博与评论中整理歌手或偶像的表达风格与互动方式，形成可对话的数字人格助手。
-- [张雪峰.skill](https://github.com/alchaincyf/zhangxuefeng-skill) - 提炼张雪峰在升学、考试与职业规划方面的实用框架，形成可复用的方法论视角。
-- [户晨风.skill](https://github.com/Janlaywss/hu-chenfeng-skill) - 提炼户晨风的消费现实主义视角，用于分析消费、城市与职业选择。
-- [童锦程.skill](https://github.com/hotcoffeeshake/tong-jincheng-skill) - 提炼童锦程在人际关系与情感判断上的直白视角与启发式。
-- [特朗普.skill](https://github.com/alchaincyf/trump-skill) - 提炼特朗普的谈判、锚定与权力博弈分析框架，形成可复用的方法论视角。
 - [塔勒布.skill](https://github.com/alchaincyf/taleb-skill) - 提炼纳西姆·塔勒布关于反脆弱与风险的启发式，形成可复用的方法论框架。
-- [求是 Skill](https://github.com/HughYau/qiushi-skill) - 从相关思想方法中整理实事求是、调查研究与战略判断等工具，形成可复用的问题分析框架。
-- [毛选.skill](https://github.com/leezythu/maoxuan-skill) - 提炼《毛选》中的矛盾分析、根据地思维与战略判断框架，形成可复用的方法论视角。
+- [特朗普.skill](https://github.com/alchaincyf/trump-skill) - 提炼特朗普的谈判、锚定与权力博弈分析框架，形成可复用的方法论视角。
+- [X 导师.skill](https://github.com/alchaincyf/x-mentor-skill) - 整合多位社交平台创作者的写作与增长打法，形成统一的导师式方法论技能。
+- [张一鸣.skill](https://github.com/alchaincyf/zhang-yiming-skill) - 提炼张一鸣的产品、组织与战略判断框架，形成可复用的方法论视角。
+- [张雪峰.skill](https://github.com/alchaincyf/zhangxuefeng-skill) - 提炼张雪峰在升学、考试与职业规划方面的实用框架，形成可复用的方法论视角。
 - [KarlMarx Skill](https://github.com/baojiachen0214/karlmarx-skill) - 提炼马克思主义的结构分析、矛盾分析与实践检验方法，形成用于深层问题分析的方法论框架。
+- [童锦程.skill](https://github.com/hotcoffeeshake/tong-jincheng-skill) - 提炼童锦程在人际关系与情感判断上的直白视角与启发式。
+- [求是 Skill](https://github.com/HughYau/qiushi-skill) - 从相关思想方法中整理实事求是、调查研究与战略判断等工具，形成可复用的问题分析框架。
+- [户晨风.skill](https://github.com/Janlaywss/hu-chenfeng-skill) - 提炼户晨风的消费现实主义视角，用于分析消费、城市与职业选择。
+- [毛选.skill](https://github.com/leezythu/maoxuan-skill) - 提炼《毛选》中的矛盾分析、根据地思维与战略判断框架，形成可复用的方法论视角。
+- [常熟阿诺（加州盛亦陶） Skill](https://github.com/Ricardo-Vv/changshu-anuo) - 通过左右脑互搏结构世间万物
 - [峰哥亡命天涯 Skill](https://github.com/rottenpen/fengge-wangmingtianya-perspective) - 提炼“峰哥亡命天涯”的现实主义、止损导向与黑色幽默式表达结构，形成可复用的方法论视角。
+- [巴菲特思维操作系统](https://github.com/will2025btc/buffett-perspective) - 提炼沃伦·巴菲特的投资与决策框架，形成可复用的方法论视角。
+- [内娱.skill](https://github.com/yanghaoraneve/star-skill) - 从歌词、视频、微博与评论中整理歌手或偶像的表达风格与互动方式，形成可对话的数字人格助手。
 
 ## 精神性与专门化主题
 
