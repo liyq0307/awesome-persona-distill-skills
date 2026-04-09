@@ -80,6 +80,7 @@ Here, "persona distillation" mainly refers to extracting expressive style, decis
 - [童锦程.skill](https://github.com/hotcoffeeshake/tong-jincheng-skill) - Distills Tong Jincheng's blunt heuristics for reading relationships and interpersonal dynamics.
 - [求是 Skill](https://github.com/HughYau/qiushi-skill) - Organizes fact-seeking, investigation, and strategic-judgment tools from related methodology into a reusable analytical framework.
 - [户晨风.skill](https://github.com/Janlaywss/hu-chenfeng-skill) - Distills Hu Chenfeng's consumer-realist perspective for analyzing spending, cities, and career choices.
+- [zizek-skill](https://github.com/JikunR/zizek-skill) - An instrument that does analysis in the Žižekian mode — interrogating presuppositions, tracking desire, identifying function, exposing contradiction, and arriving at a more accurate formulation.
 - [毛选.skill](https://github.com/leezythu/maoxuan-skill) - Distills contradiction analysis, base-building thinking, and strategic judgment frameworks from Mao's selected works into a reusable methodological perspective.
 - [常熟阿诺（加州盛亦陶） Skill](https://github.com/Ricardo-Vv/changshu-anuo) - Structure all things in the world through the mutual struggle of the left and right brains.
 - [峰哥亡命天涯 Skill](https://github.com/rottenpen/fengge-wangmingtianya-perspective) - Distills the "Fengge Wangming Tianya" style into a reality-first, stop-loss-oriented, darkly humorous methodological perspective.

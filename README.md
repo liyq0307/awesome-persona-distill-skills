@@ -83,6 +83,7 @@
 - [童锦程.skill](https://github.com/hotcoffeeshake/tong-jincheng-skill) - 提炼童锦程在人际关系与情感判断上的直白视角与启发式。
 - [求是 Skill](https://github.com/HughYau/qiushi-skill) - 从相关思想方法中整理实事求是、调查研究与战略判断等工具，形成可复用的问题分析框架。
 - [户晨风.skill](https://github.com/Janlaywss/hu-chenfeng-skill) - 提炼户晨风的消费现实主义视角，用于分析消费、城市与职业选择。
+- [zizek-skill](https://github.com/JikunR/zizek-skill) - 一个用齐泽克式的问题意识做分析的工具——追问前提、追踪欲望、识别功能、揭示矛盾，然后留下一个更准确的说法。
 - [毛选.skill](https://github.com/leezythu/maoxuan-skill) - 提炼《毛选》中的矛盾分析、根据地思维与战略判断框架，形成可复用的方法论视角。
 - [常熟阿诺（加州盛亦陶） Skill](https://github.com/Ricardo-Vv/changshu-anuo) - 通过左右脑互搏结构世间万物
 - [峰哥亡命天涯 Skill](https://github.com/rottenpen/fengge-wangmingtianya-perspective) - 提炼“峰哥亡命天涯”的现实主义、止损导向与黑色幽默式表达结构，形成可复用的方法论视角。
