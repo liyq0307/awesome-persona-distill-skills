@@ -1,12 +1,20 @@
 name: Merge Approved Submission PR
 
 on:
-  workflow_run:
-    workflows:
-      - Submission PR Validation
-      - CodeQL
-    types:
-      - completed
+  workflow_dispatch:
+    inputs:
+      pr_number:
+        description: Pull request number
+        required: true
+        type: string
+      branch:
+        description: Submission branch name
+        required: true
+        type: string
+      issue_number:
+        description: Source issue number
+        required: true
+        type: string
 
 permissions:
   contents: write
@@ -14,80 +22,73 @@ permissions:
   pull-requests: write
 
 concurrency:
-  group: submission-pr-${{ github.event.workflow_run.head_branch }}
+  group: submission-pr-${{ inputs.pr_number }}
   cancel-in-progress: false
 
 jobs:
   merge-pr:
-    if: >-
-      github.event.workflow_run.conclusion == 'success' &&
-      startsWith(github.event.workflow_run.head_branch, 'auto/submission-issue-')
+    if: startsWith(inputs.branch, 'auto/submission-issue-')
     runs-on: ubuntu-latest
     steps:
       - name: Merge automated submission PR when checks are green
         uses: actions/github-script@v7
+        env:
+          PR_NUMBER: ${{ inputs.pr_number }}
+          BRANCH: ${{ inputs.branch }}
+          ISSUE_NUMBER: ${{ inputs.issue_number }}
         with:
           script: |
             const owner = context.repo.owner;
             const repo = context.repo.repo;
-            const branch = context.payload.workflow_run.head_branch;
-            const issueMatch = branch.match(/^auto\/submission-issue-(\d+)$/);
+            const pullNumber = Number(process.env.PR_NUMBER);
+            const branch = process.env.BRANCH;
+            const issueNumber = Number(process.env.ISSUE_NUMBER);
 
-            if (!issueMatch) {
-              core.info(`Branch ${branch} does not map to an approved submission issue.`);
-              return;
-            }
-
-            const issueNumber = Number(issueMatch[1]);
-            const pulls = await github.paginate(github.rest.pulls.list, {
-              owner,
-              repo,
-              state: "open",
-              head: `${owner}:${branch}`,
-            });
-
-            if (pulls.length === 0) {
-              core.info(`No open PR found for automation branch ${branch}.`);
-              return;
-            }
-
-            const pullRequest = pulls[0];
-            const pullNumber = pullRequest.number;
-
-            const { data: combinedStatus } = await github.rest.repos.getCombinedStatusForRef({
-              owner,
-              repo,
-              ref: pullRequest.head.sha,
-            });
-            const { data: checkRuns } = await github.rest.checks.listForRef({
-              owner,
-              repo,
-              ref: pullRequest.head.sha,
-              per_page: 100,
-            });
-
-            const hasSubmissionValidation = checkRuns.check_runs.some(
-              (checkRun) => checkRun.name === "Submission PR Validation",
-            );
-            const hasCodeQL = checkRuns.check_runs.some((checkRun) => checkRun.name === "CodeQL");
-            const allChecksGreen =
-              hasSubmissionValidation &&
-              hasCodeQL &&
-              combinedStatus.state === "success" &&
-              checkRuns.check_runs.every((checkRun) => {
-                if (checkRun.status !== "completed") {
-                  return false;
-                }
-
-                return ["success", "neutral", "skipped"].includes(checkRun.conclusion);
+            for (let attempt = 1; attempt <= 24; attempt += 1) {
+              const pulls = await github.paginate(github.rest.pulls.list, {
+                owner,
+                repo,
+                state: "open",
+                head: `${owner}:${branch}`,
               });
 
-            if (!allChecksGreen) {
-              core.info(`Checks for PR #${pullNumber} are not all green yet.`);
-              return;
-            }
+              if (pulls.length === 0) {
+                core.info(`No open PR found for automation branch ${branch}.`);
+                return;
+              }
 
-            for (let attempt = 1; attempt <= 12; attempt += 1) {
+              const pullRequest = pulls[0];
+              const { data: checkRuns } = await github.rest.checks.listForRef({
+                owner,
+                repo,
+                ref: pullRequest.head.sha,
+                per_page: 100,
+              });
+
+              const hasSubmissionValidation = checkRuns.check_runs.some(
+                (checkRun) =>
+                  checkRun.name === "Submission PR Validation" &&
+                  checkRun.status === "completed" &&
+                  checkRun.conclusion === "success",
+              );
+              const hasCodeQL = checkRuns.check_runs.some(
+                (checkRun) =>
+                  checkRun.name === "CodeQL" &&
+                  checkRun.status === "completed" &&
+                  checkRun.conclusion === "success",
+              );
+              const allChecksCompleted = checkRuns.check_runs.every(
+                (checkRun) =>
+                  checkRun.status === "completed" &&
+                  ["success", "neutral", "skipped"].includes(checkRun.conclusion),
+              );
+
+              if (!hasSubmissionValidation || !hasCodeQL || !allChecksCompleted) {
+                core.info(`Checks for PR #${pullNumber} are not all green yet (attempt ${attempt}/24).`);
+                await new Promise((resolve) => setTimeout(resolve, 5000));
+                continue;
+              }
+
               const { data: pr } = await github.rest.pulls.get({
                 owner,
                 repo,
@@ -108,7 +109,8 @@ jobs:
                   repo,
                   pull_number: pullNumber,
                 });
-                return;
+                await new Promise((resolve) => setTimeout(resolve, 5000));
+                continue;
               }
 
               if (
@@ -117,7 +119,7 @@ jobs:
                 pr.mergeable_state === "unstable"
               ) {
                 core.info(
-                  `Mergeability for PR #${pullNumber} is still being computed (attempt ${attempt}/12).`,
+                  `Mergeability for PR #${pullNumber} is still being computed (attempt ${attempt}/24).`,
                 );
                 await new Promise((resolve) => setTimeout(resolve, 5000));
                 continue;
@@ -148,4 +150,4 @@ jobs:
               return;
             }
 
-            core.setFailed(`Unable to determine mergeability for PR #${pullNumber}.`);
+            core.setFailed(`Checks for PR #${pullNumber} did not turn green before timeout.`);
