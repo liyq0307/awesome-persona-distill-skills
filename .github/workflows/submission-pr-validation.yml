@@ -73,6 +73,7 @@ jobs:
         if: github.event_name == 'workflow_dispatch'
         uses: actions/github-script@v7
         env:
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
           PR_NUMBER: ${{ inputs.pr_number }}
           BRANCH: ${{ inputs.branch }}
           ISSUE_NUMBER: ${{ inputs.issue_number }}
@@ -82,7 +83,7 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               workflow_id: "merge-approved-submission-pr.yml",
-              ref: process.env.BRANCH,
+              ref: process.env.DEFAULT_BRANCH,
               inputs: {
                 pr_number: process.env.PR_NUMBER,
                 branch: process.env.BRANCH,

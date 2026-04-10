@@ -21,6 +21,8 @@ test("create-approved-submission-pr workflow only creates PRs for approved submi
   assert.match(workflow, /git push origin HEAD:"\$\{branch\}"/);
   assert.doesNotMatch(workflow, /name: Merge pull request/);
   assert.match(workflow, /github\.rest\.actions\.createWorkflowDispatch/);
+  assert.match(workflow, /DEFAULT_BRANCH: \$\{\{ github\.event\.repository\.default_branch \}\}/);
+  assert.doesNotMatch(workflow, /ref: branch/);
   assert.match(workflow, /has been created for this approved submission/i);
 });
 
@@ -46,7 +48,9 @@ test("submission-pr-validation workflow validates automated submission PRs", asy
   assert.match(workflow, /PR_NUMBER: \$\{\{ inputs\.pr_number \}\}/);
   assert.match(workflow, /BRANCH: \$\{\{ inputs\.branch \}\}/);
   assert.match(workflow, /ISSUE_NUMBER: \$\{\{ inputs\.issue_number \}\}/);
+  assert.match(workflow, /DEFAULT_BRANCH: \$\{\{ github\.event\.repository\.default_branch \}\}/);
   assert.doesNotMatch(workflow, /ref: inputs\.branch/);
+  assert.doesNotMatch(workflow, /ref: process\.env\.BRANCH/);
   assert.doesNotMatch(workflow, /pr_number: inputs\.pr_number/);
   assert.match(workflow, /bun run format:check/);
   assert.match(workflow, /bun run check:links/);
