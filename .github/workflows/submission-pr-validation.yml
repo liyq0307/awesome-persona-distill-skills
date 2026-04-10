@@ -23,6 +23,7 @@ on:
         type: string
 
 permissions:
+  actions: write
   contents: read
 
 concurrency:
@@ -67,3 +68,20 @@ jobs:
 
       - name: Check repository consistency
         run: bun run check:consistency
+
+      - name: Trigger merge workflow
+        if: github.event_name == 'workflow_dispatch'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.actions.createWorkflowDispatch({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              workflow_id: "merge-approved-submission-pr.yml",
+              ref: inputs.branch,
+              inputs: {
+                pr_number: inputs.pr_number,
+                branch: inputs.branch,
+                issue_number: inputs.issue_number,
+              },
+            });

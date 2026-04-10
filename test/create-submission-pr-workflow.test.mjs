@@ -41,6 +41,8 @@ test("submission-pr-validation workflow validates automated submission PRs", asy
   assert.match(workflow, /pr_number:/);
   assert.match(workflow, /branch:/);
   assert.match(workflow, /issue_number:/);
+  assert.match(workflow, /actions: write/);
+  assert.match(workflow, /github\.rest\.actions\.createWorkflowDispatch/);
   assert.match(workflow, /bun run format:check/);
   assert.match(workflow, /bun run check:links/);
   assert.match(workflow, /bun run check:consistency/);
@@ -58,11 +60,13 @@ test("merge-approved-submission-pr workflow merges automated PRs after validatio
   );
 
   assert.match(workflow, /name: Merge Approved Submission PR/);
-  assert.match(workflow, /workflow_run:/);
-  assert.match(workflow, /- Submission PR Validation/);
-  assert.match(workflow, /- CodeQL/);
-  assert.match(workflow, /getCombinedStatusForRef/);
+  assert.match(workflow, /workflow_dispatch:/);
+  assert.match(workflow, /pr_number:/);
+  assert.match(workflow, /branch:/);
+  assert.match(workflow, /issue_number:/);
+  assert.doesNotMatch(workflow, /getCombinedStatusForRef/);
   assert.match(workflow, /listForRef/);
+  assert.match(workflow, /for \(let attempt = 1; attempt <= 24;/);
   assert.match(workflow, /github\.rest\.pulls\.merge/);
   assert.match(workflow, /has been merged for this approved submission/i);
 });
