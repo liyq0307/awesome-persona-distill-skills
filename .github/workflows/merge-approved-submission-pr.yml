@@ -3,9 +3,8 @@ name: Merge Approved Submission PR
 on:
   workflow_run:
     workflows:
-      - Format
-      - Link Check
-      - Repository Consistency
+      - Submission PR Validation
+      - CodeQL
     types:
       - completed
 
@@ -67,7 +66,13 @@ jobs:
               per_page: 100,
             });
 
+            const hasSubmissionValidation = checkRuns.check_runs.some(
+              (checkRun) => checkRun.name === "Submission PR Validation",
+            );
+            const hasCodeQL = checkRuns.check_runs.some((checkRun) => checkRun.name === "CodeQL");
             const allChecksGreen =
+              hasSubmissionValidation &&
+              hasCodeQL &&
               combinedStatus.state === "success" &&
               checkRuns.check_runs.every((checkRun) => {
                 if (checkRun.status !== "completed") {

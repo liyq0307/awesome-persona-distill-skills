@@ -6,6 +6,7 @@ on:
       - labeled
 
 permissions:
+  actions: write
   contents: write
   issues: write
   pull-requests: write
@@ -211,6 +212,27 @@ jobs:
 
             core.setOutput("number", String(response.data.number));
             core.setOutput("url", response.data.html_url);
+
+      - name: Trigger submission PR validation
+        if: steps.create-pr.outputs.number != ''
+        uses: actions/github-script@v7
+        env:
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          PR_NUMBER: ${{ steps.create-pr.outputs.number }}
+        with:
+          script: |
+            const branch = `auto/submission-issue-${process.env.ISSUE_NUMBER}`;
+            await github.rest.actions.createWorkflowDispatch({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              workflow_id: "submission-pr-validation.yml",
+              ref: branch,
+              inputs: {
+                pr_number: process.env.PR_NUMBER,
+                branch,
+                issue_number: process.env.ISSUE_NUMBER,
+              },
+            });
 
       - name: Comment with created PR link
         if: steps.create-pr.outputs.url != ''

@@ -15,15 +15,38 @@ test("create-approved-submission-pr workflow only creates PRs for approved submi
   );
 
   assert.match(workflow, /name: Create Approved Submission PR/);
-  assert.doesNotMatch(workflow, /workflows: write/);
+  assert.match(workflow, /actions: write/);
   assert.match(workflow, /name: Create remote branch reference/);
   assert.match(workflow, /github\.rest\.git\.createRef/);
   assert.match(workflow, /git push origin HEAD:"\$\{branch\}"/);
   assert.doesNotMatch(workflow, /name: Merge pull request/);
+  assert.match(workflow, /github\.rest\.actions\.createWorkflowDispatch/);
   assert.match(workflow, /has been created for this approved submission/i);
 });
 
-test("merge-approved-submission-pr workflow merges automated PRs after CI succeeds", async () => {
+test("submission-pr-validation workflow validates automated submission PRs", async () => {
+  const workflow = await fs.readFile(
+    path.join(
+      process.cwd(),
+      ".github",
+      "workflows",
+      "submission-pr-validation.yml",
+    ),
+    "utf8",
+  );
+
+  assert.match(workflow, /name: Submission PR Validation/);
+  assert.match(workflow, /pull_request:/);
+  assert.match(workflow, /workflow_dispatch:/);
+  assert.match(workflow, /pr_number:/);
+  assert.match(workflow, /branch:/);
+  assert.match(workflow, /issue_number:/);
+  assert.match(workflow, /bun run format:check/);
+  assert.match(workflow, /bun run check:links/);
+  assert.match(workflow, /bun run check:consistency/);
+});
+
+test("merge-approved-submission-pr workflow merges automated PRs after validation succeeds", async () => {
   const workflow = await fs.readFile(
     path.join(
       process.cwd(),
@@ -36,9 +59,10 @@ test("merge-approved-submission-pr workflow merges automated PRs after CI succee
 
   assert.match(workflow, /name: Merge Approved Submission PR/);
   assert.match(workflow, /workflow_run:/);
-  assert.match(workflow, /- Format/);
-  assert.match(workflow, /- Link Check/);
-  assert.match(workflow, /- Repository Consistency/);
+  assert.match(workflow, /- Submission PR Validation/);
+  assert.match(workflow, /- CodeQL/);
+  assert.match(workflow, /getCombinedStatusForRef/);
+  assert.match(workflow, /listForRef/);
   assert.match(workflow, /github\.rest\.pulls\.merge/);
   assert.match(workflow, /has been merged for this approved submission/i);
 });
