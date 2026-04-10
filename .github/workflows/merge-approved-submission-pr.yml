@@ -65,12 +65,6 @@ jobs:
                 per_page: 100,
               });
 
-              const hasSubmissionValidation = checkRuns.check_runs.some(
-                (checkRun) =>
-                  checkRun.name === "Submission PR Validation" &&
-                  checkRun.status === "completed" &&
-                  checkRun.conclusion === "success",
-              );
               const hasCodeQL = checkRuns.check_runs.some(
                 (checkRun) =>
                   checkRun.name === "CodeQL" &&
@@ -83,7 +77,7 @@ jobs:
                   ["success", "neutral", "skipped"].includes(checkRun.conclusion),
               );
 
-              if (!hasSubmissionValidation || !hasCodeQL || !allChecksCompleted) {
+              if (!hasCodeQL || !allChecksCompleted) {
                 core.info(`Checks for PR #${pullNumber} are not all green yet (attempt ${attempt}/24).`);
                 await new Promise((resolve) => setTimeout(resolve, 5000));
                 continue;

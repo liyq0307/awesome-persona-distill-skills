@@ -74,6 +74,7 @@ test("merge-approved-submission-pr workflow merges automated PRs after validatio
   assert.match(workflow, /branch:/);
   assert.match(workflow, /issue_number:/);
   assert.doesNotMatch(workflow, /getCombinedStatusForRef/);
+  assert.doesNotMatch(workflow, /hasSubmissionValidation/);
   assert.match(workflow, /listForRef/);
   assert.match(workflow, /for \(let attempt = 1; attempt <= 24;/);
   assert.match(workflow, /github\.rest\.pulls\.merge/);
