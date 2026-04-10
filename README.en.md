@@ -59,7 +59,7 @@ Here, "persona distillation" mainly refers to extracting expressive style, decis
 
 ## Intimate Relationships and Family Memories
 
-- [brother.skill](https://github.com/realteamprinz/brother-skill) - Distill your bros from YouTube, TikTok, Discord, WeChat and more — their voice, catchphrases, humor style, and chaos energy. Works for real brothers, group chat friends, and internet personalities. Self-learning memory that deepens with every input.
+- [brother.skill](https://github.com/realteamprinz/brother-skill) - Distill your bros (working for real brothers, group chat friends, and internet personalities) from YouTube, TikTok, Discord, WeChat and more — their voice, catchphrases, humor style, and chaos energy.
 - [Crush.skill](https://github.com/xiaoheizi8/crush-skills) - Distills conversational style from chats, photos, and social traces for reflection and emotional recollection.
 - [ex.skill](https://github.com/therealXiaomanChu/ex-skill) - Organizes speaking style and shared memories from private records for remembrance and reflection.
 - [MamaSkill](https://github.com/jiangziyan-693/MamaSkill) - Organizes chat logs, letters, and voice notes from a loved one into a commemorative family companion.
@@ -105,7 +105,7 @@ Here, "persona distillation" mainly refers to extracting expressive style, decis
 - [DiamondSutra.skill](https://github.com/dull-bird/diamond-sutra-skill) - Organizes teaching frameworks for the Diamond Sutra from the text and related interpretations into a conversational specialized skill.
 - [Master-skill](https://github.com/xr843/Master-skill) - Organizes Han Chinese Buddhist teaching styles and explanatory perspectives based on Buddhist canonical literature.
 - [Numerologist Skills (AI 术数工程化)](https://github.com/FANzR-arch/Numerologist_skills) - Uses structured references and scripted constraints to organize Qimen Dunjia, Ziwei Doushu, and related metaphysics practices.
-- [月老 · 姻缘测算 Skills](https://github.com/Ming-H/yinyuan-skills) - Organizes relationship divination into a multi-mode traditional metaphysics skill for matching, fortune sticks, and romance-luck readings.
+- [月老·姻缘测算 Skills](https://github.com/Ming-H/yinyuan-skills) - Organizes relationship divination into a multi-mode traditional metaphysics skill for matching, fortune sticks, and romance-luck readings.
 
 ## Contributing
 

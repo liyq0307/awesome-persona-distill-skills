@@ -62,7 +62,7 @@
 
 ## 亲密关系与家庭记忆
 
-- [兄弟.skill](https://github.com/realteamprinz/brother-skill) - 从抖音、微信截图等来源蒸馏你的兄弟们——他们的说话方式、口头禅、搞笑风格和恶搞能量。支持蒸馏真实兄弟、群聊好友和网络红人（如Jake Paul、张凤霞、MrBeast等）。自学习记忆，输入越多画像越准。
+- [兄弟.skill](https://github.com/realteamprinz/brother-skill) - 从抖音、微信截图等来源蒸馏你的兄弟们（支持真实兄弟、群聊好友和网络红人）——他们的说话方式、口头禅、搞笑风格和恶搞能量。
 - [暗恋对象.skill](https://github.com/xiaoheizi8/crush-skills) - 从聊天、照片与社交痕迹中提炼对话风格，用于个人回望与情感整理。
 - [前任.skill](https://github.com/therealXiaomanChu/ex-skill) - 从私人记录中整理说话方式与共同记忆，用于回忆与关系梳理。
 - [MamaSkill](https://github.com/jiangziyan-693/MamaSkill) - 从亲人的聊天记录、信件与语音中整理纪念型家庭陪伴助手。
@@ -108,7 +108,7 @@
 - [金刚经.skill](https://github.com/dull-bird/diamond-sutra-skill) - 基于《金刚经》及相关解读整理佛学讲解框架，形成可对话的专门化技能。
 - [Master-skill](https://github.com/xr843/Master-skill) - 基于佛教经典文献整理汉传佛教的教学风格与讲解视角。
 - [Numerologist Skills](https://github.com/FANzR-arch/Numerologist_skills) - 用结构化知识库与脚本化约束整理奇门遁甲、紫微斗数等术数技能。
-- [月老 · 姻缘测算 Skills](https://github.com/Ming-H/yinyuan-skills) - 将姻缘测算整理为多模式传统术数技能，用于合婚、求签与桃花运势分析。
+- [月老·姻缘测算 Skills](https://github.com/Ming-H/yinyuan-skills) - 将姻缘测算整理为多模式传统术数技能，用于合婚、求签与桃花运势分析。
 
 ## 贡献
 
