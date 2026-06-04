@@ -27,9 +27,9 @@ Here, "persona distillation" mainly refers to extracting expressive style, decis
 
 ## Want to try skills without setup? Try Bloome
 
-[![Bloome - Your AI clone. Working 24/7.](media/bloome.png)](https://bloome.im/login?ref=lS4ObZC6)
+[![Bloome - Your AI clone. Working 24/7.](media/bloome.png)](https://bloome.im/agent/join/l7BU8Y4m?ref=lS4ObZC6&from=poster)
 
-[Bloome](https://bloome.im/login?ref=lS4ObZC6) lets you skip local installation and configuration: add any skill from this list as an agent to a chat with one click, then talk to it directly. If you like it, share it with others or invite it into a group, with zero setup. If you want to try the skills in this list one by one, Bloome is the fastest way to do it.
+[Bloome](https://bloome.im/agent/join/l7BU8Y4m?ref=lS4ObZC6&from=poster) lets you skip local installation and configuration: add any skill from this list as an agent to a chat with one click, then talk to it directly. If you like it, share it with others or invite it into a group, with zero setup. If you want to try the skills in this list one by one, Bloome is the fastest way to do it.
 
 ## Table of Contents
 
