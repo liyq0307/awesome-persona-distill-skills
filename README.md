@@ -28,6 +28,12 @@
  </picture>
 </a>
 
+## 不想挨个安装？试试 Bloome
+
+[![Bloome - Your AI clone. Working 24/7.](media/bloome.png)](https://bloome.im/login?ref=lS4ObZC6)
+
+[Bloome](https://bloome.im/login?ref=lS4ObZC6) 让你跳过本地安装和配置：把列表里的任意一个 skill 作为 agent 一键加进聊天，直接对话试用。喜欢就分享给别人，或拉进群一起玩，零配置。想挨个体验这个列表里的 skill，在 Bloome 上最快。
+
 ## 目录
 
 - [自我蒸馏与元工具](#自我蒸馏与元工具)
