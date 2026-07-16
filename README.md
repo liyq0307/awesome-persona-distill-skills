@@ -30,9 +30,9 @@
 
 ## 不想挨个安装？试试 Bloome
 
-[![Bloome - Your AI clone. Working 24/7.](media/bloome.png)](https://bloome.im/app?ref=lS4ObZC6&utm_medium=github&utm_source=xixu-me-ivor-202607)
+[![Bloome - Your AI clone. Working 24/7.](media/bloome.png)](https://bloome.im/app?ref=lS4ObZC6&utm_medium=github&utm_source=xixu-me-awesome-persona-distill-skills-ivor-202606)
 
-[Bloome](https://bloome.im/app?ref=lS4ObZC6&utm_medium=github&utm_source=xixu-me-ivor-202607) 让你跳过本地安装和配置：把列表里的任意一个 skill 作为 agent 一键加进聊天，直接对话试用。喜欢就分享给别人，或拉进群一起玩，零配置。想挨个体验这个列表里的 skill，在 Bloome 上最快。
+[Bloome](https://bloome.im/app?ref=lS4ObZC6&utm_medium=github&utm_source=xixu-me-awesome-persona-distill-skills-ivor-202606) 让你跳过本地安装和配置：把列表里的任意一个 skill 作为 agent 一键加进聊天，直接对话试用。喜欢就分享给别人，或拉进群一起玩，零配置。想挨个体验这个列表里的 skill，在 Bloome 上最快。
 
 ## 目录
 
